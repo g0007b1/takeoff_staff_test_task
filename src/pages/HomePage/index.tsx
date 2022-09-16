@@ -5,9 +5,17 @@ import {useState} from "react";
 import {Box, Button, Container, Typography} from "@mui/material";
 import {LoginForm} from "../../components/LoginForm";
 import {Navigate} from "react-router-dom";
+import {useActions} from "../../hooks/useActions";
 //т.к. в ТЗ сказано, что страницы должно быть всего две, регистрация и логинизация происходит тут,
 //так бы для этого создал отдельные руты /login /register
 export const HomePage = () => {
+    const email = localStorage.getItem('email');
+    const password = localStorage.getItem('password');
+    const {login} = useActions()
+    if (email && password) {
+        login({email, password, rememberMe: true});
+    }
+
     const isAuth = useSelector((state: RootState) => state.AuthReducer.isAuth)
     const [loginMode, setLoginMode] = useState(false)
     const [registerMode, setRegisterMode] = useState(false)

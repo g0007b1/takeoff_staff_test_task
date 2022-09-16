@@ -16,7 +16,7 @@ export const contactsActions = {
     },
     patchContact: (contact: contactsDataType, owner:string) => {
         return async (dispatch:ThunkDispatch<RootState, void, Action>) => {
-            const response = await contactsApi.patchContact(owner,contact)
+            await contactsApi.patchContact(owner,contact)
             await dispatch(contactsActions.getContacts(owner))
         }
     }

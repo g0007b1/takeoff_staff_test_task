@@ -3,13 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import {Provider} from "react-redux";
 import {store} from "./store";
-import {authActions} from "./store/reducers/auth/actions";
-
-const email = localStorage.getItem('email');
-const password = localStorage.getItem('password');
-if (email && password) {
-    store.dispatch(authActions.login({email, password, rememberMe: true}));
-}
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

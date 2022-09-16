@@ -1,4 +1,5 @@
 import {authActionsTypes} from "./types";
+import {AnyAction} from "redux";
 
 const initialState = {
     isAuth: false,
@@ -9,7 +10,7 @@ const initialState = {
 }
 type initialStateType = typeof initialState
 
-export const AuthReducer = (state: initialStateType = initialState, action: any) => {
+export const AuthReducer = (state: initialStateType = initialState, action: AnyAction):initialStateType => {
     switch (action.type) {
         case authActionsTypes.SET_AUTH: {
             return {...state, isAuth: action.isAuth, login: action.login}

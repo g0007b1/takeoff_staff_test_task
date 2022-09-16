@@ -10,12 +10,3 @@ export type registrationDataType = {
     login: string
 }
 
-export type userLoginData = {
-    accessToken: string,
-    user: {
-        email: string
-        id: number
-        login: string
-        name: string
-    }
-}

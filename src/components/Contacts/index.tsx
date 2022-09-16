@@ -27,13 +27,13 @@ export const Contacts: FC = () => {
             return !(c.phone === contact.phone && c.name === contact.name)
 
         })
-        patchContact(newContacts, login)
+        patchContact(newContacts, login as string)
     }
 
     const addContactHandler = (contact: contactsDataType) => {
         let newContacts = contacts
         newContacts.push(contact)
-        patchContact(newContacts, login)
+        patchContact(newContacts, login as string)
         setAddMode(false)
     }
 
@@ -44,7 +44,7 @@ export const Contacts: FC = () => {
     const editContact = (index: number, newContact: contactsDataType) => {
         let newContacts = contacts
         newContacts[index] = newContact
-        patchContact(newContacts, login)
+        patchContact(newContacts, login as string)
     }
 
     const contactList = contacts.filter((contact: contactsDataType) => {
