@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "email": "izgagin1234567890@gmail.com",
+      "password": "$2a$10$TD.38BSRByy6nhuqW8VPvO/ZejsWma81HJCjGmdbeyWpTm2IL4aTe",
+      "login": "g0007b1",
+      "id": 1
+    }
+  ],
+  "contacts": [
+    {
+      "id": "g0007b1",
+      "contacts": [
+        {
+          "name": "Иван",
+          "phone": "+79121231231"
+        },
+        {
+          "name": "Дима",
+          "phone": "+79321321321"
+        },
+        {
+          "name": "Соня",
+          "phone": "+79123456789"
+        },
+        {
+          "name": "Жора",
+          "phone": "+89098765432"
+        },
+        {
+          "name": "Жора Поиск",
+          "phone": "8668"
+        }
+      ]
+    }
+  ]
+}

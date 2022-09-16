@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# Тестовое задание на вакансию Front-end Developer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Версия node: v16.13.1
+## Чтобы запустить проект нужно:
+1) `git clone` репозитория
+2) `git checkout develop` для перехода на нужную ветку
+3) `npm install` для установки всех пакетов
+4) `npm run startAll` для запуска сервера и приложения
+5) Готово!
+## Основной стек:
+1) React: 18.2.0
+2) Redux: 4.2.0
+3) Typescript: 4.8.3
+4) Json-server: 0.17.0
+5) Axios: 0.27.2
+6) Mui/material: 5.10.5
 
-## Available Scripts
+## Скриншоты работы:
+#### Реализованы все требования в ТЗ
+![Скриншот 1](public/imagesForReadMe/1.png)
+#### Каждое поле валидируется
+![Скриншот 2](public/imagesForReadMe/2.png)
+#### После входа открывается список контактов пользователя
+![Скриншот 3](public/imagesForReadMe/3.png)
+#### С возможностью поиска среди них
+![Скриншот 4](public/imagesForReadMe/4.png)
+#### И редактированием каждого
+![Скриншот 5](public/imagesForReadMe/5.png)
+#### Все данные сохраняются на сервер в файл
+![Скриншот 5](public/imagesForReadMe/6.png)
 
-In the project directory, you can run:
+## Задание:
+Необходимо написать приложение личный кабинет.
+В приложении должно быть две страницы:
+1) Страница входа
+2) Страница со списком контактов
 
-### `npm start`
+Оформление и данные для заполнения страниц на усмотрение кандидата.
+Обязательно наличие информации в readme о том, как запускать приложение. Так же необходимо указать версию node (узнать можно с помощью команды node -v)
+Для выполнения тестового задания Вы можете использовать UI-библиотеку компонентов (MUI, antd и т.д.).
+Задание необходимо выполнить на TypeScript, без использования any и ts-ignore.
+При выполнении работы обязательно использовать стейт менеджер (redux, mobx)
+Время на выполнение тестового задания не ограничено.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Страница входа
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Для реализации авторизации можно использовать запросы с моковыми данными https://github.com/typicode/json-server.
 
-### `npm test`
+Страница со списком контактов
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Страница со списком контактов пользователя должна быть доступна только после авторизации.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
